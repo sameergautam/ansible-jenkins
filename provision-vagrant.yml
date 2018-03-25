@@ -6,6 +6,6 @@
   # become: True
   gather_facts: True
   roles:
-    - { role: ansible-role-rabbitmq,
+    - { role: rabbitmq,
         rabbitmq_version = "3.7.4"
       }
