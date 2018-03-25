@@ -3,7 +3,7 @@
   hosts:
     - all
   connection: local
-  # become: True
+  become: True
   gather_facts: True
   roles:
     - { role: rabbitmq,
