@@ -7,5 +7,5 @@
   gather_facts: True
   roles:
     - { role: rabbitmq,
-        rabbitmq_version = "3.7.4"
+        rabbitmq_version: "3.7.4"
       }
