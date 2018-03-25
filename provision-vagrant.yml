@@ -1,9 +1,11 @@
 ---
 - name: Provision Vagrant
-  hosts: localhost
+  hosts:
+    - all
+  connection: local
   become: True
   gather_facts: True
   roles:
     - { role: ansible-role-rabbitmq,
-        rabbitmq_version = "3.7.4"        
+        rabbitmq_version = "3.7.4"
       }
